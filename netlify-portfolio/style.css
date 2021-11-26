@@ -48,42 +48,36 @@
     display: flex;
     background: white;
     height: 100vh;
+    width: 100vw;
     color: black;
     min-height: 500px;
     font-family: Fira Mono;
+    justify-content: center;
+    align-items: center;
   }
   .home .home-content .text-1{
     font-size: 67px;
     font-weight: 600;
   }
-  .container{
-    display: inline-block;
-  }
-  /* Typewriter Styles */
-  .home .home-content .typewriter{
-    text-align: center;
-    font-size: 27px;
-    font-weight: 500;
-    color: black;
-    font-family: Fira Mono;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    animation:
-      typing 3.5s steps(30, end),
-      blink-caret .9s step-end infinite;
-  }
 
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: black }
-  }
+  /* Typewriter Styles */
+ .container{
+   display: inline-block;
+ }
+ .typewriter{
+   font-size: 27px;
+   font-weight: 500;
+   overflow: hidden;
+   border-right: .15em solid black;
+   white-space: nowrap;
+   animation: typing 3s steps(30, end) forwards;
+   font-size: 1.6rem;
+   width: 0;
+ }
+ @keyframes typing{
+   from {width: 0;}
+   to {width: 100%}
+ }
   .home .home-content .solid {
     width: 18%;
     margin-left: auto;
