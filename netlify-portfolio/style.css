@@ -54,6 +54,7 @@
     font-family: Fira Mono;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .home .home-content .text-1{
     font-size: 67px;
@@ -61,12 +62,12 @@
   }
 
   /* Typewriter Styles */
- .container{
+ .home .home-content .container{
    display: inline-block;
  }
- .typewriter{
+ .home .home-content .typewriter{
    overflow: hidden;
-   border-right: .15em solid black;
+   border-right: .10em solid black;
    white-space: nowrap;
    animation: typing 1s steps(20, end) forwards,
    blinking 1.2s infinite;
