@@ -14,7 +14,7 @@
     margin: auto;
   }
 
-  /* Navbar Styling */
+  /* Navbar Styles */
   .navbar {
     position: fixed;
     width: 100%;
@@ -43,7 +43,7 @@
     margin-left: 25px;
   }
 
-  /* Homepage Styling  */
+  /* Homepage Styles  */
   .home{
     display: flex;
     background: white;
@@ -65,19 +65,22 @@
    display: inline-block;
  }
  .typewriter{
-   font-size: 27px;
-   font-weight: 500;
    overflow: hidden;
    border-right: .15em solid black;
    white-space: nowrap;
-   animation: typing 3s steps(30, end) forwards;
+   animation: typing 1s steps(20, end) forwards,
+   blinking 1.2s infinite;
    font-size: 1.6rem;
    width: 0;
  }
  @keyframes typing{
-   from {width: 0;}
-   to {width: 100%}
+   from { width: 0 }
+   to { width: 100% }
  }
+ @keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: black; }
+}
   .home .home-content .solid {
     width: 18%;
     margin-left: auto;
