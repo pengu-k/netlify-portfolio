@@ -10,7 +10,7 @@
   }
   .max-width{
     max-width: 1300px;
-    padding: 0%;
+    padding: 0 80px;
     margin: auto;
   }
 
@@ -29,7 +29,7 @@
   }
   .navbar .logo a{
     color: black;
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 600;
   }
   .navbar .menu li{
@@ -38,7 +38,7 @@
   }
   .navbar .menu li a{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
   }
@@ -51,7 +51,6 @@
     display: flex;
     background: white;
     height: 100vh;
-    width: 100vw;
     color: black;
     min-height: 500px;
     font-family: Fira Mono;
@@ -62,14 +61,6 @@
   .home .home-content .text-1{
     font-size: 67px;
     font-weight: 600;
-  }
-
-  /* Navbar button style*/
-  .menu-button{
-    color: black;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
   }
 
   /* Typewriter Style */
@@ -121,6 +112,24 @@
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+  }
+
+  
+  /* Contact Style */
+  section{
+    padding: 100px 0;
+  }
+  .contact{
+    font-family: Fira Mono;
+  }
+  .contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: Fira Mono;
   }
 
 
