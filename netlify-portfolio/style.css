@@ -131,6 +131,16 @@
     padding-bottom: 20px;
     font-family: Fira Mono;
   }
-  .contact 
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
+  .contact .fields{
+    width: 1000%;
+  }
 
