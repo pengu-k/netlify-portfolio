@@ -62,6 +62,12 @@
     font-size: 67px;
     font-weight: 600;
   }
+  .penguin{
+    position: relative;
+    width: 160px;
+    height: auto;
+  }
+  
 
   /* Typewriter Style */
  .home .home-content .container{
