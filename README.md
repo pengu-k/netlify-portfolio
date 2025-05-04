@@ -1,2 +1,5 @@
 # netlify-portfolio
-A personal portfolio project using HTML, CSS, JavaScript and Netlify
+Hi 🐧
+This is my personal portfolio website built with HTML, CSS, JavaScript, and deployed using Netlify.
+It showcases a few projects I've worked on.
+
