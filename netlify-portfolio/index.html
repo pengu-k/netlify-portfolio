@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@pengu-k</title>
-    <link rel="shortcut icon" type="image/png" href="images/penguin-icon.png"/>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@pengu-k</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="images/penguin-icon.png" />
+</head>
+<body>
 
-  <body>
-    
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="max-width">
-        <div class="logo"><a href="index.html">@pengu-k</a></div>
-        <ul class="menu">
-          <li><a href="about.html" class="nav-link">About Me</a></li>
-          <li><a href="project.html" class="nav-link">Projects</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">@pengu-k</a></div>
+      <ul class="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <img class="penguin" src="images/penguin heart.gif" alt="Pixel Penguin Heart" />
+      <div class="text-1">Hi, I'm Khryzelle</div>
+      <div class="container">
+        <div class="typewriter">and this my little portfolio.</div>
       </div>
-    </nav>
+      <div class="solid"></div>
+      <div class="scroll-down"><a href="#projects">↓ Scroll to Projects</a></div>
+    </div>
+  </section>
 
-    <!-- Homepage -->
-    <section class="home" id="home">
-      <div class="max-width">
-        <img class="penguin" src="images/penguin heart.gif" alt="Pixel Penguin Heart">
-        <div class="home-content">
-          <div class="text-1">Hi, I'm Khryzelle</div>
-          <div class="container">
-            <div class="typewriter">and this my little portfolio.</div>
-          </div>
-          <div class="solid"></div>
-          <div class="social">
-          </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="max-width">
+      <h2 class="title">About Me</h2>
+      <div class="about-content">
+        <div class="center">
+          <p class="text">
+            Hey! I'm @pengu-k, a tech enthusiast who enjoys building web projects, exploring networks, and solving problems. I'm currently studying for the CCNA to become a Network Engineer.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="max-width">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <!-- Project Cards are pulled from your existing project.html — you can include them here or via JS import -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact</h2>
+      <p class="text">You can reach me via my socials or email!</p>
+    </div>
+  </section>
+
+  <!-- Optional script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
