@@ -1,144 +1,168 @@
 /* Font Style (Fira Mono) */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Fira Mono', monospace;
+  background: white;
+  color: black;
 }
 
 /* CSS Resets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  .max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-  /* Navbar Style */
-  .navbar {
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    background: white;
-  }
-  .navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .navbar .logo a{
-    color: black;
-    font-size: 35px;
-    font-weight: 600;
-  }
-  .navbar .menu li{
-    list-style: none;
-    display: inline-block;
-  }
-  .navbar .menu li a{
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-  }
-  .navbar .menu li a:hover{
-    color: #696969;
-  }
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
 
-  /* Homepage Style  */
-  .home{
-    display: flex;
-    background: white;
-    height: 100vh;
-    color: black;
-    min-height: 500px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .home .home-content .text-1{
-    font-size: 67px;
-    font-weight: 600;
-  }
-  .penguin{
-    position: relative;
-    width: 160px;
-    height: auto;
-  }
-  
+/* Navbar Style */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  background: white;
+  z-index: 1000;
+}
 
-  /* Typewriter Style */
- .home .home-content .container{
-   display: inline-block;
- }
- .home .home-content .typewriter{
-   overflow: hidden;
-   border-right: .10em solid black;
-   white-space: nowrap;
-   animation: typing 1.4s steps(20, end) forwards,
-   blinking 1.2s infinite;
-   font-size: 1.6rem;
-   width: 0;
- }
- @keyframes typing{
-   from { width: 0 }
-   to { width: 100% }
- }
- @keyframes blinking {
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+.navbar .menu li a:hover {
+  color: #696969;
+}
+
+/* Homepage Style */
+.home {
+  display: flex;
+  background: white;
+  height: 100vh;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
+
+.home .home-content .text-1 {
+  font-size: 67px;
+  font-weight: 600;
+}
+
+.penguin {
+  position: relative;
+  width: 160px;
+  height: auto;
+}
+
+/* Typewriter Style */
+.home .home-content .container {
+  display: inline-block;
+}
+
+.home .home-content .typewriter {
+  overflow: hidden;
+  border-right: .10em solid black;
+  white-space: nowrap;
+  animation: typing 1.4s steps(20, end) forwards, blinking 1.2s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
   from { border-color: transparent }
   to { border-color: black; }
 }
-  .home .home-content .solid {
-    width: 18%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    border-top: 3px solid black;
-  }
 
-  /* About Me Style */
-  section{
-    padding: 100px 0;
-  }
-  .about .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-  }
-  .about .about-content .center .text{
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-  }
+.home .home-content .solid {
+  width: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  border-top: 3px solid black;
+}
 
-  
-  /* Contact Style */
-  section{
-    padding: 100px 0;
-  }
-  .contact .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-  }
-  .contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Scroll Down Indicator */
+.scroll-down {
+  margin-top: 40px;
+  font-size: 18px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.scroll-down a {
+  text-decoration: none;
+  color: black;
+}
+
+/* About Me & Contact Sections */
+section {
+  padding: 100px 0;
+}
+
+.about .title,
+.contact .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about .about-content .center .text {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Projects Section */
 .projects {
   padding: 120px 20px;
@@ -150,7 +174,6 @@ body {
   font-weight: 700;
   text-align: center;
   margin-bottom: 60px;
-  color: black;
   font-family: 'Fira Mono', monospace;
 }
 
@@ -165,7 +188,7 @@ body {
 
 /* Project Cards */
 .project-card {
-  border: 2px solid #333; /* darker border to show on white */
+  border: 2px solid #333;
   border-radius: 12px;
   padding: 24px;
   background-color: #fdfdfd;
@@ -206,7 +229,6 @@ body {
   color: black;
   text-decoration: none;
   margin-top: 10px;
-  font-family: 'Fira Mono', monospace;
 }
 
 .github-link:hover {
@@ -214,3 +236,27 @@ body {
   text-decoration: underline;
 }
 
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar .max-width {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 45px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .project-grid {
+    padding: 0 10px;
+  }
+
+  .navbar .menu li a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
