@@ -146,5 +146,82 @@
     align-items: center;
   }
 
+/* Projects Section */
+.projects {
+  padding: 120px 0;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Fira Mono', monospace;
+}
+
+.project-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Fira Mono', monospace;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* GitHub Link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.github-link img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.github-link:hover {
+  color: #444;
+  text-decoration: underline;
+}
 
 
