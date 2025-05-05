@@ -261,8 +261,6 @@ section {
   }
 }
 
-/* Add this to the bottom of your CSS file */
-
 @media (max-width: 480px) {
   .max-width {
     padding: 0 20px;
@@ -339,5 +337,45 @@ section {
   .project-grid {
     grid-template-columns: 1fr;
     padding: 0;
+  }
+}
+/* Hamburger Icon (Hidden by default) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: black;
+  margin-left: auto;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .navbar .menu li {
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  .navbar .max-width {
+    flex-direction: row;
+    align-items: center;
   }
 }
