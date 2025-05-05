@@ -339,7 +339,7 @@ section {
     padding: 0;
   }
 }
-/* Hamburger Icon (Hidden by default) */
+/* Show hamburger icon only on mobile */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -347,13 +347,13 @@ section {
   background: none;
   border: none;
   color: black;
-  margin-left: auto;
 }
 
-/* Show hamburger on mobile */
+/* Mobile view */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    margin-left: auto;
   }
 
   .navbar .menu {
