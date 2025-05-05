@@ -339,30 +339,48 @@ section {
     padding: 0;
   }
 }
-/* Show hamburger icon only on mobile */
+/* Hamburger icon default (☰) and toggle when active (X) */
 .menu-toggle {
   display: none;
   font-size: 28px;
   cursor: pointer;
+  padding: 10px;
   background: none;
   border: none;
   color: black;
+  transition: transform 0.3s ease;
 }
 
-/* Mobile view */
+/* Rotate the X for effect */
+.menu-toggle.active {
+  content: '✕'; /* just for visual in CSS, real content updated by JS */
+  transform: rotate(180deg);
+}
+
+/* Mobile Menu Style */
 @media (max-width: 768px) {
+  .navbar .max-width {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
   .menu-toggle {
     display: block;
-    margin-left: auto;
+    z-index: 1001;
   }
 
   .navbar .menu {
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100vw;
     background-color: white;
-    width: 100%;
-    padding: 10px 0;
-    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding: 15px 20px;
   }
 
   .navbar .menu.active {
@@ -370,12 +388,12 @@ section {
   }
 
   .navbar .menu li {
-    padding: 10px 20px;
+    padding: 12px 0;
     text-align: left;
   }
 
-  .navbar .max-width {
-    flex-direction: row;
-    align-items: center;
+  .navbar .menu li a {
+    font-size: 18px;
+    margin: 0;
   }
 }
