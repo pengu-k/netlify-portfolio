@@ -9,12 +9,20 @@ document.querySelector('.logo a').addEventListener('click', function (e) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// 🔥 Hamburger menu toggle
+// Hamburger menu toggle
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
 
   menuToggle.addEventListener("click", function () {
     navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+
+    // Toggle icon between ☰ and ✕
+    if (menuToggle.textContent === "☰") {
+      menuToggle.textContent = "✕";
+    } else {
+      menuToggle.textContent = "☰";
+    }
   });
 });
